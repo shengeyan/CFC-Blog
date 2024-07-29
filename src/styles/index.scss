@@ -1,0 +1,104 @@
+// 引入清除默认样式
+@import "./reset.scss";
+// 进度条配置
+@import "./nprogress.scss";
+
+// 工具图标颜色
+.koi-icon {
+  // 翻转色字体颜色
+  color: var(--el-header-text-color);
+  outline: none; // 去除伪元素
+  &:hover {
+    color: var(--el-color-primary);
+    cursor: pointer;
+  }
+}
+
+/* el-table表头颜色配置 */
+.el-table .el-table__header-wrapper th {
+  font-weight: bold;
+  color: #303133;
+  @apply dark:c-#ffffff;
+}
+
+/* 字体 */
+@font-face {
+  font-family: "KoiFont";
+  src: url("../assets/fonts/KoiFont1.woff2");
+  // 本地加载慢，可使用cdn加速
+  // src: url(https://cdn.nesxc.com/font/HarmonyOS_Sans_SC_Medium.subset.woff2)
+}
+
+// 隐藏滚动条
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+// ::-webkit-scrollbar {
+//   width: 6px;
+//   height: 6px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   border-radius: 10px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background-color: var(--el-color-primary-light-3);
+//   border-radius: 10px;
+//   transition: all 0.2s ease-in-out;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   cursor: pointer;
+//   background-color: var(--el-color-primary);
+// }
+
+/* 管理平台全局样式 */
+body {
+  // 全局字体
+  font-family: "KoiFont", var(--el-font-family);
+  // 修改图标
+  cursor: url("../assets/mouse/index.cur"), auto;
+  word-break: break-word;
+  // 隐藏滚动条
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+// 明亮模式显示背景图片
+html {
+  // 全局背景图片
+  background-image: url("@/assets/images/bg/bgPicture.webp");
+}
+
+// 黑暗模式显示背景颜色
+html.dark {
+  background: linear-gradient(to right, #434343 0, black 100%);
+}
+
+/* 头像旋转 */
+.user-avatar {
+  cursor: pointer;
+  transition: all 0.6s;
+  user-select: none;
+}
+
+.user-avatar:hover {
+  transform: rotate(360deg);
+}
+
+/* 图标旋转 */
+.rotate-box {
+  animation: rotate-icon 5s linear infinite;
+}
+@keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
