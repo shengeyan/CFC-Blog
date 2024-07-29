@@ -43,12 +43,12 @@
 
 <script setup lang="ts">
 // 定义参数的类型
-interface ITagProps {
-  tagOptions?: any;
-  value?: any;
-  size?: any;
-  effect?: any;
-}
+// interface ITagProps {
+//   tagOptions?: any;
+//   value?: any;
+//   size?: any;
+//   effect?: any;
+// }
 // 子组件接收父组件的值
 // withDefaults：设置默认值  defineProps：接收父组件的参数
 // @ts-ignore
