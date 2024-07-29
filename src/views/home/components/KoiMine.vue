@@ -104,24 +104,24 @@ import { getMine } from "@/api/blog/article/index";
 const handleLoginUrl = () => {
   window.open("http://39.107.143.109/login", "_blank");
 };
-
-const handleWebsite = (value: number) => {
-  if (value == 1) {
-    window.open("https://gitee.com/BigCatHome/koi-ui", "_blank");
-  }
-  if (value == 2) {
-    koiMsgWarning("微信号：QQ1736306607");
-  }
-  if (value == 3) {
-    window.open("https://space.bilibili.com/395991508/video", "_blank");
-  }
-  if (value == 4) {
-    window.open("https://juejin.cn/post/7332652230711164991", "_blank");
-  }
-  if (value == 5) {
-    window.open("https://music.163.com", "_blank");
-  }
-};
+// TODO
+// const handleWebsite = (value: number) => {
+//   if (value == 1) {
+//     window.open("https://gitee.com/BigCatHome/koi-ui", "_blank");
+//   }
+//   if (value == 2) {
+//     koiMsgWarning("微信号：QQ1736306607");
+//   }
+//   if (value == 3) {
+//     window.open("https://space.bilibili.com/395991508/video", "_blank");
+//   }
+//   if (value == 4) {
+//     window.open("https://juejin.cn/post/7332652230711164991", "_blank");
+//   }
+//   if (value == 5) {
+//     window.open("https://music.163.com", "_blank");
+//   }
+// };
 
 const mine = ref({
   nickName: "『Crazy For Code』",

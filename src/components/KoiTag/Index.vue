@@ -52,12 +52,13 @@ interface ITagProps {
 // 子组件接收父组件的值
 // withDefaults：设置默认值  defineProps：接收父组件的参数
 // @ts-ignore
-const props = withDefaults(defineProps<ITagProps>(), {
-  tagOptions: [],
-  value: "",
-  size: "default",
-  effect: "light"
-});
+// TODO
+// const props = withDefaults(defineProps<ITagProps>(), {
+//   tagOptions: [],
+//   value: "",
+//   size: "default",
+//   effect: "light"
+// });
 </script>
 
 <style lang="scss" scoped>
